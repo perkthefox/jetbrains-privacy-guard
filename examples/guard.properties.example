@@ -1,0 +1,5 @@
+# Reference only. The installer writes actual, escaped absolute paths.
+# Values are read as UTF-8. Environment variables and ~ are not expanded.
+plugin.roots=/absolute/profile/plugins|/absolute/ide/plugins
+ide.lib=/absolute/ide/lib
+log=/absolute/guard/logs/guard.log

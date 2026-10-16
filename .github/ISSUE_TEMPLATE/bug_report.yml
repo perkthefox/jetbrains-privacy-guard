@@ -1,0 +1,30 @@
+name: Bug or compatibility problem
+description: Report a regression, blocked plugin or startup failure.
+title: '[Bug] '
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Guard version
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, IDE build, Java runtime, plugin ID and plugin version. Omit personal paths.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+      description: Include minimal reproduction steps. Distinguish observed requests from static code findings.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence
+      description: Relevant guard entries only. Do not upload full logs, source prompts, credentials or vendor archives.
+      render: text

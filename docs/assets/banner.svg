@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+  <title id="title">JetBrains Privacy Guard</title>
+  <desc id="desc">Keep your tools. Control what they share. Local Java instrumentation.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#111e2b"/>
+      <stop offset="1" stop-color="#08121d"/>
+    </linearGradient>
+    <linearGradient id="accent" x2="1" y2="1">
+      <stop stop-color="#9cebd8"/>
+      <stop offset="1" stop-color="#55b6d2"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#8eb5bf" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="380" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="380" rx="24" fill="url(#grid)"/>
+  <path d="M0 290H66M0 306H104M1176 74h104M1212 90h68" stroke="#75cbbb" stroke-opacity=".3" stroke-width="2"/>
+  <g transform="translate(72 90)">
+    <path d="M88 0 164 30v67c0 49-34 82-76 103C46 179 12 146 12 97V30Z" fill="#122e39" stroke="url(#accent)" stroke-width="3"/>
+    <path d="m60 69-22 25 22 25m56-50 22 25-22 25m-38 17 20-83" fill="none" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="150" cy="166" r="20" fill="#9cebd8"/>
+    <path d="m141 166 6 6 12-13" fill="none" stroke="#112731" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
+    <text x="300" y="102" fill="#9cebd8" font-size="14" letter-spacing="3">LOCAL JAVA INSTRUMENTATION</text>
+    <text x="296" y="164" fill="#f2f6f9" font-size="49" font-weight="700" letter-spacing="-1.4">JetBrains Privacy Guard</text>
+    <text x="300" y="212" fill="#b3c4d3" font-size="24">Keep your tools. Control what they share.</text>
+    <path d="M300 246h812" stroke="#263d4d"/>
+    <g fill="#8da5b8" font-size="14" letter-spacing="1">
+      <text x="300" y="282">IN-MEMORY PATCHES</text>
+      <circle cx="501" cy="277" r="2" fill="#66c8b7"/>
+      <text x="525" y="282">LOCAL RULES</text>
+      <circle cx="665" cy="277" r="2" fill="#66c8b7"/>
+      <text x="689" y="282">REVERSIBLE SETUP</text>
+    </g>
+  </g>
+</svg>

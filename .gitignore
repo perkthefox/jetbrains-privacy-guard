@@ -1,0 +1,26 @@
+/build/
+/dist/
+/runtime/
+/local/
+/reports/
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/
+*.jar
+*.class
+*.jfr
+*.log
+*.log.*
+*.javap.txt
+*.zip
+.env
+.env.*
+install.json
+pending-install.json
+guard.properties
+backup/
+
+# The portable example is safe to publish.
+!examples/guard.properties.example

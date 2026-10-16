@@ -1,0 +1,22 @@
+name: Plugin rule request
+description: Propose a specific behavior to inspect in a plugin.
+title: '[Rule] '
+body:
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin ID and version
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: Explain the telemetry or environment inspection and the evidence available. Do not attach vendor binaries or private captures.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Intended scope
+      description: Which behavior should change, and which working features should remain available?
