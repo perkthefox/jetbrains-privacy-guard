@@ -14,9 +14,17 @@
 
 [![Build and test](https://github.com/perkthefox/jetbrains-privacy-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/perkthefox/jetbrains-privacy-guard/actions/workflows/ci.yml)
 
-JetBrains Privacy Guard is a local Java startup agent that disables **specific, inspected telemetry and environment-inspection paths** in supported IDE plugins. It transforms their bytecode in memory before the affected classes execute.
+JetBrains Privacy Guard is a local Java startup agent that blocks **known checks for "cracks", Java agents and local modifications**, alongside inspected telemetry and environment-inspection paths in supported IDE plugins. It transforms their bytecode in memory before the affected classes execute.
 
 Keep Copilot, AI Assistant and Junie enabled. Suppress the extra analytics paths covered by the rules. Reapply those rules when updated plugin classes load.
+
+## Our position: your IDE, your rules
+
+**How you launch your IDE and what you install in it is your business. Plugin authors should not police your JVM flags, Java agents, installed plugins, local patches, or tools they label "cracks" or "hacks".**
+
+We oppose these checks and the collection or reporting of their results. Blocking checks for "cracks", agents, "hacks" and other local modifications is an explicit goal of this project: we aim to neutralize every such mechanism we identify.
+
+**Current coverage:** the agent blocks the mechanisms already inspected in the supported plugin versions. "All possible checks" is a goal, not a verified capability: unknown techniques, new code paths and native implementations need additional investigation and rules.
 
 **Experimental.** The real-IDE baseline is WebStorm 2026.2.3 on macOS with JetBrains Runtime 25. Other IDEs and versions need verification. AI features still send the requests and context needed to operate; this is targeted instrumentation, not a network sandbox.
 
@@ -24,8 +32,8 @@ Keep Copilot, AI Assistant and Junie enabled. Suppress the extra analytics paths
 
 | Component | Covered behavior |
 | --- | --- |
-| Extra Icons / Extra ToolWindow Colorful Icons | Known environment and agent scans, IDE statistics, remote inspection definitions and associated browser callbacks |
-| Rainbow Brackets | Known JVM argument, class/resource and installed-plugin inspection paths |
+| Extra Icons / Extra ToolWindow Colorful Icons | Known "crack"/Java-agent detection and environment scans, IDE statistics, remote inspection definitions and associated browser callbacks |
+| Rainbow Brackets | Known "crack"/agent-detection paths using JVM arguments, class/resource lookups and installed-plugin lists |
 | Material Theme UI | Analytics initialization, identification and tracking |
 | GitHub Copilot | Telemetry and error upload paths, native telemetry setting, selected telemetry hosts in the IDE HTTP bridge |
 | JetBrains AI Assistant | Additional data sharing, JCP analytics, agent-event telemetry and telemetry exporters |

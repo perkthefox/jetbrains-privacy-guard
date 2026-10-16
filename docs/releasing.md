@@ -20,7 +20,7 @@ Repository: [perkthefox/jetbrains-privacy-guard](https://github.com/perkthefox/j
 
 Description:
 
-> Local privacy guard for JetBrains IDE plugins. Blocks known telemetry and environment checks while keeping AI features enabled.
+> Your IDE, your rules. Blocks known crack/Java-agent detection and telemetry in JetBrains IDE plugins while keeping AI features enabled.
 
 Suggested topics: `jetbrains`, `webstorm`, `privacy`, `java-agent`, `instrumentation`, `telemetry`.
 
